@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+<style>
+  * {
+    font-family: arial, comic sans, times new roman;
+    color: #f2f2f2;
+    --main-gray: #303841;
+  }
+  #text {
+    color: #f2f2f2;
+  }
+  body {
+    background-color: #010409;
+  }
+    #navbar {
+  background-color: #16171d;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+    }
+  #navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+    }
+ #navbar a:hover {
+  color: #3370d9;
+   background-color: #f2f2f2;
+  }
+    header, footer {
+      color: black;
+      margin: 10px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: thin;
+    }
+    #main, #footer-text {
+      margin-left: 210px;
+      padding: 20px;
+      margin-bottom: 110px;
+      color: #f2f2f2;
+    }
+  #welcome-section {
+    font-size: 24px;
+    margin: 25px;
+    top: 10%;
+    margin-left: 30%;
+    width: 600px;
+    height: 200px;
+    outline: dashed 1px black;
+    position: relative;
+    padding: 50px 10px 10px;
+    color: #f2f2f2;
+    background-color: #20252e;
+    overflow: hidden;
+  }
+  .intro {
+    position: absolute;
+    overflow: hidden;
+    margin: 0 0 50px 90px;
+    top: 30%;
+  }
+    footer {
+      background-color: #000000;
+      color: #f2f2f2;
+    }
+  #list {
+    padding-bottom: 10px;
+  }
+  #nav-link {
+    font-size: 1.5em;
+  }
+  #cert {
+    max-width: 500px;
+    width: 500px;
+  }
+  #prjimg {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+    max-width: 500px
+  object-fit: cover;
+  }
+  .project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+  @media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+    }
+  }
+  #gradient {
+    background: linear-gradient(#010409, #3370d9);
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+      #trans {
+    border: 1px solid #3370ff;
+    margin-top: 0;
+    padding-top: 0;
+  }
+    </style>
+    <nav id="navbar">
+  <a class="active" href='#' id="profile-link" target="_blank">About me</a>
+  <a href="#certificates">Certifications</a>
+  <a href="#projects">Projects</a>
+    </nav>
+  <body>
+    <section id="welcome-section">
+      <h1 id="text" class="intro">Welcome to my portfolio!</h1>
+    </section>
+    <main id="main">
+    <div id="text">
+    </div>
+    <h3>About me:</h3>
+    <div>
+    <p>I am a secondary 4 student with a passion for cybersecurity.</p>
+      <h3> Current competencies:</h3>
+      <ul >
+        <li id ="list">Experience with Windows and linux Operating Systems and their respective CLI &#40;Command Line Interface&#41;</li>
+        <li id ="list">Basic front end web development technologies such as CSS and HTML</li>
+        <li id ="list">Knowledge of tools regarding cybersecurity, e.g. Nmap, johntheripper, burp suite, OWASP ZAP &#38; metasploit</li>
+        <li id ="list">Basic knowledge of networking</li>
+        <li id="list"> Knowledge of different models, e.g. Lockheed Martin kill chain, MITRE ATT&#38;CK framework</li>
+        <li id="list">Some understanding of cryptography</li>
+        <h5>Misc.</h5>
+        <a href="https://tryhackme.com/p/randomwob">Profile</a>
+    </div>
+      <section class="certificates" id="certificates"> <h2>Certifications</h2>
+        <h5>Online certifications</h5>
+        <p> Here are some online certificates that I have obtained.</p>
+      <img src="https://cdn.discordapp.com/attachments/1108399173847486534/1108399193766240396/THM-J2YE4ZL6OO.png" id="cert" alt="thm certificate">
+        
+        <img src="https://cdn.discordapp.com/attachments/1108399173847486534/1128316972107567215/image.png" id="cert" alt="freecodecamp certificate">
+        <h5>School certificates</h5>
+        <img src="https://cdn.discordapp.com/attachments/1108399173847486534/1127943580472856636/HONG_WEI_CERT1.jpg" id="cert" alt="fll certificate">
+        <img src="https://cdn.discordapp.com/attachments/1108399173847486534/1127968766119137311/CoderZ.jpg" id="cert" alt="coderz cert">
+        <img src="https://cdn.discordapp.com/attachments/1108399173847486534/1127969077458120714/NUS_Camp.jpg" id="cert" alt="physics participation cert">
+      </section>
+        <section id="projects" class="projects">
+          <h2 class="project-title">Projects</h2>
+          <h5>Here are some of the projects that ive made</h5>
+          <div class="projects-grid">
+             <a href="https://drive.google.com/file/d/1DSj2qfUNhcLmLG5Y-IoJQ4X4MrzIYip6/view?usp=sharing" target="_blank" class="project project-tile">
+          <img src="https://cdn.discordapp.com/attachments/1116960994099462154/1128274005397360701/image.png" id="prjimg" />
+               <p>Python guessing game</p></a>
+             <a href="https://funw1234.wixsite.com/source-code" target="_blank" class="project project-tile">
+          <img src="https://cdn.discordapp.com/attachments/1116960994099462154/1132943778584469535/image.png" id="prjimg" />
+               <p>This websites source code</p></a>
+          </div>
+        </section>
+    </div>
+    </main>
+  </body><div id="gradient"></div>
+  <hr id="trans"></hr>
+        <footer>
+          <p><font size="0.1"> Site ver 1.4.6 | made manually with HTML &#38; CSS</font></p>
+      </footer>   
+
+    </div>
+    </html>
